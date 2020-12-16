@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Zakat Calculator</title>
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h3>Zakat Calculator</h3>
+    <div>
+        <label for="nisab">Fix Nisab for 2020</label>
+        <input type="text" id="nisab" name="nisab" placeholder="15762.00" readonly>
+
+        <label for="revenue">Total Revenue a Year</label>
+        <input type="text" id="revenue" name="revenue">
+
+        <label for="expenses">Total Expenses a Year</label>
+        <input type="text" id="expenses" name="expenses">
+
+        <label for="profit">Profit</label>
+        <input type="text" id="profit" name="profit" readonly>
+
+        <label for="pay">Zakat to Pay</label>
+        <input type="text" id="pay" name="pay" readonly>
+
+        <input type="button" onclick="zakatpayment()" id="calculate" value="Calculate">
+    </div>
+  </body>
+</html>
